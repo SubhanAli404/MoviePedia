@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoviePedia-Movies | TVShows | Trailer All Info In One Place</title>
+  <link rel="icon" type="image/x-icon" href="/images/r.png">
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-800 ">
+  <div class="absolute opacity-40"><img src="images/best1.jpg" class="h-[32rem] w-screen object-cover" alt=""></div>
+  <nav class="bg-transparent text-white flex h-20 relative">
+    <img src="images/r.png" alt="MoviePedia Image" class="h-10 pl-12 pr-2 my-3" /><span
+      class="my-5 font-bold text-3xl cursor-pointer tracking-tight text-white">MoviePedia</span>
+    <ul class="flex pl-72 my-6 space-x-10 justify-end font-semibold">
+      <a href="">
+        <li class="cursor-pointer">Home</li>
+      </a>
+      <a href="movies.html">
+        <li class="cursor-pointer">Movies</li>
+      </a>
+      <a href="">
+        <li class="cursor-pointer">TV Shows</li>
+      </a>
+
+      <a href="">
+        <li class="cursor-pointer">About Us</li>
+      </a>
+    </ul>
+    <div class="my-6 ml-24">
+      <form action="" id="form">
+        <input type="text" placeholder="Search" id="search"
+          class="search bg-transparent placeholder-white border-2 border-white rounded-xl pl-2 pb-0.5">
+      </form>
+    </div>
+    <div class="flex items-center  ml-24"><img class="w-10 m-1 mt-2" src="images/login.png" alt="login icon"><button
+        class="text-white   font-semibold loginclick">Login/Register</button>
+    </div>
+    <div class="overlay1">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content1 flex flex-col justify-center items-center">
+        <section class="forms-section">
+
+          <div class="forms">
+            <div class="form-wrapper is-active mylogin">
+              <button type="button" class="switcher switcher-login">
+                Login
+                <span class="underline"></span>
+              </button>
+              <form class="form form-login">
+                <fieldset>
+                  <legend>Please, enter your email and password for login.</legend>
+                  <div class="input-block">
+                    <label for="login-email">E-mail</label>
+                    <input id="login-email" type="email" required>
+                  </div>
+                  <div class="input-block">
+                    <label for="login-password">Password</label>
+                    <input id="login-password" type="password" required>
+                  </div>
+                </fieldset>
+                <button type="submit" class="btn-login">Login</button>
+              </form>
+            </div>
+            <div class="form-wrapper mysignup">
+              <button type="button" class="switcher switcher-signup">
+                Sign Up
+                <span class="underline"></span>
+              </button>
+              <form class="form form-signup">
+                <fieldset>
+                  <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                  <div class="input-block">
+                    <label for="signup-email">E-mail</label>
+                    <input id="signup-email" type="email" required>
+                  </div>
+                  <div class="input-block">
+                    <label for="signup-password">Password</label>
+                    <input id="signup-password" type="password" required>
+                  </div>
+                  <div class="input-block">
+                    <label for="signup-password-confirm">Confirm password</label>
+                    <input id="signup-password-confirm" type="password" required>
+                  </div>
+                </fieldset>
+                <button type="submit" class="btn-signup">Continue</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+
+    </div>
+  </nav>
+  <main class="flex justify-center">
+
+    <div class="main  py-16 relative">
+
+      <div class="text-4xl pl-10 text-white font-serif pt-8 font-medium">
+        Track films you’ve watched. <br>
+        Save those you want to see. <br>
+        Tell your friends what’s good. <br>
+        <button
+          class="loginclick bg-red-400  rounded-md text-lg py-1 px-4 relative left-20 mt-4 font-mono font-extrabold checkme">GET
+          STARTED — IT‘S FREE!</button>
+      </div>
+      <div class=" content-box">
+        <div class="login flex">
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
